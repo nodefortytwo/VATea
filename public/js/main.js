@@ -6,10 +6,16 @@
 			var node = $(this).parents('.input-row');
 			$(node).next().removeClass('hidden');
 
-			$('#winner').css('min-height', $('#users').height() + 'px');
-			$('#winner h1').css('line-height', $('#winner').height() + 'px');
+			$('#winner').css('height', $('#users').height() + 'px');
+
+
+			//$('#winner h1').css('line-height', $('#winner').height() + 'px');
 
 		});
+
+		$('#winner').bind('DOMNodeInserted DOMNodeRemoved', function(){
+			center();
+		})
 
 		$('.go').click(function(){
 			var vals = [];
@@ -26,7 +32,7 @@
 						);
 				}
 			})
-
+			
 			if (vals.length == 0){
 				$('#reset').modal();
 			}
@@ -44,6 +50,12 @@
 					setTimeout(run, 100);
 				}else{
 					$('[data-id="'+val.id+'"]').addClass('used');
+
+					var link = $('<a></a>').html('email them a reminder')
+							.attr('target', '_blank')
+							.attr('href', 'mailto:?subject=Make the Tea!&body=You were selected to make the tea!');
+
+					$('#link').html(link);
 				}
 			}
 
@@ -57,11 +69,17 @@
 			$('.used').removeClass('used');
 			$('#name').html('');
 			$('#reset').modal('hide');
+			$('#link').html('&nbsp;');
 		})
 
 
 	});
 
+	var center = function(){
 
+		$('#winner .center').css('margin-top', '-' + ($('#winner .center').height() / 2) + 'px');
+		$('#winner .center').css('margin-left', '-' + ($('#winner .center').width() / 2) + 'px');
+		$('#winner .center').css('left', '50%');
+	}
 
 })(jQuery);

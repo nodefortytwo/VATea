@@ -3,7 +3,7 @@ extends layout
 block content
     div.row
         div.col-md-4.col-md-offset-4
-            h1 VATea
+            h1#app-title VATea
     div.row
         div#users.col-md-4
             div.row
@@ -29,8 +29,12 @@ block content
                     a(href="#").btn.btn-primary.go Try your luck
         div.col-md-8
             div.row
-                div.col-md-12#winner
-                    h1#name 
+                div.col-md-12
+                    div#winner
+                        div.center
+                            h1#name
+                            p
+                                strong#link &nbsp;   
         div(role="dialog", aria-labelledby="myModalLabel", aria-hidden="true").modal.fade#reset
             div.modal-dialog
                 div.modal-content
