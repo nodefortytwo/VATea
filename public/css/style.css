@@ -1,0 +1,26 @@
+.container{
+	max-width: 810px !important;
+	border:1px solid #efefef;
+	padding-bottom:10px;
+	margin-top: 10px;
+}
+
+.input-icon{
+	padding-top:4px;
+}
+
+.input-row{
+	padding-bottom: 5px;
+}
+
+.used{
+	opacity: 0.5;
+}
+
+.used icon{
+	content: "\e084";
+}
+
+#winner{
+	text-align: center;
+}

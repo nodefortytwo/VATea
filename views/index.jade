@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    div.row
+        div.col-md-4.col-md-offset-4
+            h1 VATea
+    div.row
+        div#users.col-md-4
+            div.row
+                div.col-md-12
+                    h2 Add Brewer
+            div(data-id="0").row.input-row
+                div.col-md-12
+                    input(type="text", placeholder="Name #1").col-md-12
+            div(data-id="1").row.input-row.hidden
+                div.col-md-12
+                    input(type="text", placeholder="Name #2").col-md-12
+            div(data-id="2").row.input-row.hidden
+                div.col-md-12
+                    input(type="text", placeholder="Name #3").col-md-12
+            div(data-id="3").row.input-row.hidden
+                div.col-md-12
+                    input(type="text", placeholder="Name #4").col-md-12
+            div(data-id="4").row.input-row.hidden
+                div.col-md-12
+                    input(type="text", placeholder="Name #5").col-md-12
+            div(data-id="4").row
+                div.col-md-12
+                    a(href="#").btn.btn-primary.go Try your luck
+        div.col-md-8
+            div.row
+                div.col-md-12#winner
+                    h1#name 
+        div(role="dialog", aria-labelledby="myModalLabel", aria-hidden="true").modal.fade#reset
+            div.modal-dialog
+                div.modal-content
+                    div.modal-header
+                        button(type="button", data-dismiss="modal", aria-hdden="true").close &times;
+                        h4.modal-title All Tea'd Out
+                    div.modal-body
+                        p Everyone has made their round!, click reset to start a new round.
+                    div.modal-footer
+                        button(type="button").btn.btn-primary#reset-btn Reset
