@@ -1,41 +1,61 @@
 extends layout
 
 block content
-    div.row
-        div.col-md-4.col-md-offset-4
-            h1#app-title VATea
-    div.row
-        div#users.col-md-4
-            div.row
-                div.col-md-12
-                    h2 Add Brewer
-            div(data-id="0").row.input-row
-                div.col-md-12
-                    input(type="text", placeholder="Name #1").col-md-12
-            div(data-id="1").row.input-row.hidden
-                div.col-md-12
-                    input(type="text", placeholder="Name #2").col-md-12
-            div(data-id="2").row.input-row.hidden
-                div.col-md-12
-                    input(type="text", placeholder="Name #3").col-md-12
-            div(data-id="3").row.input-row.hidden
-                div.col-md-12
-                    input(type="text", placeholder="Name #4").col-md-12
-            div(data-id="4").row.input-row.hidden
-                div.col-md-12
-                    input(type="text", placeholder="Name #5").col-md-12
-            div.row
-                div.col-md-12
-                    a(href="#").btn.btn-primary.go Try your luck
-        div.col-md-8
-            div.row
-                div.col-md-12
-                    div#winner
-                        div.center
-                            h1#name
-                            p
-                                strong#link &nbsp;   
-        div(role="dialog", aria-labelledby="myModalLabel", aria-hidden="true").modal.fade#reset
+    div.row.height100
+        div.col-custom-left.height100
+            img.logo(src="/images/logo.png");
+            p A third of business owners worry about getting their VAT returns wrong, for others the stress is the amount of time it takes.
+            p It's time to stop stessing and put the TEA into VAT.
+        div.col-custom-right
+            div.state1
+                div.intro
+                    p Enter the names of your colleagues below & click "Get Brewing" to see who has to make the next cup of tea!
+                    img.arrow(src="/images/down-arrow.png")
+                div.names
+                    div(data-id="0").row.input-row
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="1").row.input-row
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="2").row.input-row
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="3").row.input-row
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="4").row.input-row
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="5").row.input-row.hidden
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="6").row.input-row.hidden
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="7").row.input-row.hidden
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="8").row.input-row.hidden
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div(data-id="9").row.input-row.hidden
+                        div.col-md-12
+                            input(type="text", placeholder="Enter name").col-md-12
+                    div.row
+                        div.col-md-12
+                            button.btn.col-md-12.go Get Brewing!
+            div.state2.hidden
+                div.winner-badge
+                    span.title time to put the kettle on
+                    span#name Rick Burgess
+                div.share
+                    span.scope-note Let {{player name}} know they lost
+                    a.email(href="#email", target="_blank") e-mail them
+                    a.twitter(href="#twitter", target="_blank") tweet them
+                button.btn.col.md-12.replay Replay
+            img.cup(src="/images/cup.png");
+    div(role="dialog", aria-labelledby="myModalLabel", aria-hidden="true").modal.fade#reset
             div.modal-dialog
                 div.modal-content
                     div.modal-header
