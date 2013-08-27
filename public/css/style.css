@@ -1,3 +1,36 @@
+/********fonts*******/
+@font-face {
+  font-family: 'FocoRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/foco-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/foco-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.svg#FocoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoBlackRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.svg#FocoBlackRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoBold';
+  src: url("http://www.sage.co.uk/fonts/foco/focobold-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focobold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.svg#FocoBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoLightRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/focolight-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focolight-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.svg#FocoLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body{
 	
     min-height: 100%;
