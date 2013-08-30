@@ -151,6 +151,7 @@ button{
 	overflow: hidden;
 	background-repeat: no-repeat;
 	color:white;
+	clear:both;
 }
 
 .winner-badge .title{
@@ -181,6 +182,7 @@ button{
 	text-align: center;
 	float: left;
 	width:100%;
+	clear: both;
 }
 
 .share span{
