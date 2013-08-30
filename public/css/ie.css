@@ -1,3 +1,7 @@
 .names input{
 	width: 290px;
 }
+
+.input-row{
+	margin: 0;
+}
