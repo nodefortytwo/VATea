@@ -133,6 +133,7 @@ button{
 	width:320px;
 	margin-right: 45px;
 	padding-bottom: 20px;
+	overflow-x:hidden;
 }
 
 .state1, .state2{
