@@ -65,7 +65,9 @@ input{
 
 .sage-logo{
 	float: right;
-	margin: 20px
+	margin: 20px;
+	width:100px;
+	height: 40px;
 }
 .height100{
     min-height: 100%;
