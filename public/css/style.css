@@ -40,7 +40,7 @@ html, body{
 }
 
 input{
-	 line-height:2.5em;	 
+	 line-height:2em;	 
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
