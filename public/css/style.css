@@ -41,6 +41,7 @@ html, body{
 
 input{
 	 line-height: normal !important;
+	 vertical-align: middle;
 	 
 }
 
@@ -235,6 +236,10 @@ button{
 	border-radius: 0px;
 	clear: both;
 
+}
+
+.go{
+	width: 100%;
 }
 
 .modal {
