@@ -135,6 +135,11 @@ button{
 	padding-bottom: 20px;
 }
 
+.state1, .state2{
+	clear: both;
+	width: 100%;
+}
+
 .names{
 	clear: both;
 	width: 100%;
@@ -208,6 +213,7 @@ button{
 
 .replay{
 	width:100%;
+
 }
 
 .modal-content{

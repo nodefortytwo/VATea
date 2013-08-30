@@ -19,7 +19,7 @@
 
 				var row = $(this).parents('.input-row');
 
-				if($(this).val().length > 0 && !row.hasClass('used')){
+				if($(this).val().length > 0 & && $(this).val() != "Enter name" && !row.hasClass('used')){
 					vals.push({
 								id : $(row).attr('data-id'),
 								name : $(this).val()
