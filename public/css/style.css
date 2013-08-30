@@ -135,6 +135,15 @@ button{
 	padding-bottom: 20px;
 }
 
+.names{
+	clear: both;
+	width: 100%;
+}
+
+.names input{
+	width: 100%;
+}
+
 .winner-badge{
 	width: 320px;
 	height:260px;
