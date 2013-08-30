@@ -40,9 +40,7 @@ html, body{
 }
 
 input{
-	 line-height: normal !important;
-	 vertical-align: middle;
-	 
+	 line-height:2.5em;	 
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -83,6 +81,7 @@ input{
 
 .logo{
 	width:230px;
+	height:405px;
 	display: block;
 	margin: 32px auto;
 }
