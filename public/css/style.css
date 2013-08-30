@@ -133,7 +133,6 @@ button{
 	width:320px;
 	margin-right: 45px;
 	padding-bottom: 20px;
-	overflow-x:hidden;
 }
 
 .state1, .state2{
@@ -147,7 +146,7 @@ button{
 }
 
 .names input{
-	width: 100%;
+	width: 290px;
 }
 
 .winner-badge{
@@ -187,7 +186,7 @@ button{
 	padding: 10px 26px;
 	text-align: center;
 	float: left;
-	width:100%;
+	width:300px;
 	clear: both;
 }
 
