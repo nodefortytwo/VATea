@@ -206,6 +206,9 @@ button{
 	background-position: top center;
 }
 
+.replay{
+	width:100%;
+}
 
 .modal-content{
 	border-radius: 0px;
