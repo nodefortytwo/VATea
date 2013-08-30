@@ -1,0 +1,43 @@
+{
+  "name": "html5-placeholder-polyfill",
+  "version": "2.0.8",
+  "title": "HTML5 placeholder Polyfill",
+  "description": "Lightweight and very robust little jQuery plugin that generates the look and feel of the HTML5 placeholder attribute for browsers without native support.",
+  "keywords": [
+    "jquery",
+    "html5",
+    "placeholder",
+    "polyfill"
+  ],
+  "homepage": "https://github.com/ginader/HTML5-placeholder-polyfill",
+  "author": {
+    "name": "Dirk Ginader",
+    "url": "http://ginader.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ginader/HTML5-placeholder-polyfill.git"
+  },
+  "bugs": "https://github.com/ginader/HTML5-placeholder-polyfill/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "http://www.gnu.org/licenses/gpl.html"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "main": [
+    "/dist/placeholder_polyfill.jquery.min.combo.js",
+    "/dist/placeholder_polyfill.min.css"
+  ],
+  "gitHead": "b8266069bf6bd442ab2d581bc2741064e50944af",
+  "readme": "HTML5 placeholder Polyfill\n==========================\n\nLightweight and very robust little jQuery plugin that generates the look and feel of the HTML5 placeholder attribute for browsers without native support. It also adds an extra title in case the placeholder text is too long to be displayed. \nThe polyfill comes with an option to define if the placeholder text should be read to screenreaders or not (on by default). New in version 1.9 is the option to make it behave like Chrome or mobile Safari (hide placeholder when the users enters content rather than when the fields receives focus).\n\nDemos:\n------\n__To see the actual work of this polyfill use an old browser like Firefox 3.6!__\n\n* __[check out the DEMO](http://blog.ginader.de/dev/jquery/HTML5-placeholder-polyfill/docs/)__\n* __[check out the Chrome style DEMO](http://blog.ginader.de/dev/jquery/HTML5-placeholder-polyfill/docs/index-chromeish.html)__\n* __[check out the DEMO using Modernizr to load the Polyfill](http://blog.ginader.de/dev/jquery/HTML5-placeholder-polyfill/docs/index-modernizr.html)__ (Thanks to Modernizr/yepnope nothing needs to get loaded when the Browser natively supports the placeholder)\n\n\nDependencies:\n-------------\n\n### Required:\n\n* [jQuery](http://jquery.com/) (tested with 1.6.2 but might as well work with older versions)\n\n### Optional but recommended:\n\n* [Modernizr](http://www.modernizr.com/) (tested with 2.0.6) OR [yepnope.js](http://yepnopejs.com/)\n\t* yepnope.js is included with Modernizr by default. Just make sure the setting in the Extras-Block: \"Modernizr.load (yepnope.js)\" is checked on the [Modernizr Download Page](http://modernizr.com/download/)\n\n* [fontresize](https://github.com/johnantoni/jquery.onfontresize) (excellent even though terribly unmaintained event plugin that fires when a user changes the font size of their browser (that usually breaks the other placeholder polyfills))\n\n### Optional \n\n#### Required if hiding the placeholder when user types instead of onfocus (like Chrome or mobile Safari) {hideOnFocus : false}\n\n* [requestAnimationFrame polyfill](https://gist.github.com/1579671) better than a simple timeout loop as browsers can slow the loop down when it's not the active window\n\n### Highly optional \n\n#### only needed if you want users to be able to resize textareas:\n\n* [jquery-resize](https://github.com/cowboy/jquery-resize) if included a repositioning is triggered when a user resizes a textarea. If not I disable the resizing of textareas to avoid rendering problems\n\n\nBrowser Support\n---------------\n\nThe placeholder attribute has decent support across current Browsers. This script adds support for the older generations including:\n\n* Internet Explorer < 10\n* Firefox < 4.0\n* Safari < 4.0\n* iOS Safari < 4.0\n* Android Browser < 2.0\n\nFor more details on native support see the browser suppport table at [caniuse.com](http://caniuse.com/#search=placeholder).\n\nUSAGE:\n------\n\n### Simply include the Javascript and CSS. The Polyfill will only run when needed.\n\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"placeholder_polyfill.min.css\">\n\t\t<script src=\"placeholder_polyfill.jquery.min.combo.js\" charset=\"utf-8\"></script>\n\t</head>\n\nPlease bear in mind that every input needs a linked label in order for the plugin to work.\n\n### Using [Modernizr](http://www.modernizr.com/), modern browser don't even have to load the polyfill at all.\n\n\t<script>\n\tModernizr.load({\n\t    test: Modernizr.input.placeholder,\n\t    nope: [\n\t\t\t\t'placeholder_polyfill.min.css',\n\t\t\t\t'placeholder_polyfill.jquery.min.combo.js'\n\t          ]\n\t});\n\t</script>\n\n### Using [yepnope.js](http://yepnopejs.com/) (used as load() in Modernizr), the same as with Modernizr, but with manual feature detection.\n\n\t<script>\n\tyepnope({\n\t    test: ('placeholder' in $('<input>')[0]),\n\t    nope: [\n                'placeholder_polyfill.min.css',\n                'placeholder_polyfill.jquery.min.combo.js'\n\t          ]\n\t});\n\t</script>\n\n### Configuring the behavior (optional)\n\n\t<head>\n\t\t<link rel=\"stylesheet\" href=\"placeholder_polyfill.min.css\">\n\t\t<script>\n    \tplaceHolderConfig = {\n    \t\t// css class that is used to style the placeholder\n            \tclassName: 'placeholder', \n            // expose the placeholder text to screenreaders or not\n\t            visibleToScreenreaders : true,\n\t        // css class is used to visually hide the placeholder\n\t\t        visibleToScreenreadersHideClass : 'placeholder-hide-except-screenreader', \n\t\t    // css class used to hide the placeholder for all\n\t            visibleToNoneHideClass : 'placeholder-hide',\n            // either hide the placeholder on focus or on type\n\t            hideOnFocus : false, \n            // remove this class from a label (to fix hidden labels)\n\t            removeLabelClass : 'visuallyhidden', \n\t        // replace the label above with this class\n\t            hiddenOverrideClass : 'visuallyhidden-with-placeholder', \n            // allow the replace of the removeLabelClass with hiddenOverrideClass or not\n\t            forceHiddenOverride : true, \n            // apply the polyfill even for browser with native support\n\t            forceApply : false, \n            // init automatically or not\n            \tautoInit : true \n    \t}\n    \t</script> \n\t\t<script src=\"placeholder_polyfill.jquery.min.combo.js\" charset=\"utf-8\"></script>\n\t</head>\t\n\nVERSION HISTORY\n---------------\n\n[See the complete Version History here](http://blog.ginader.de/dev/jquery/HTML5-placeholder-polyfill/web/version-history.html)\n",
+  "readmeFilename": "readme.markdown",
+  "_id": "html5-placeholder-polyfill@2.0.8"
+}

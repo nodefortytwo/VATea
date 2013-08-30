@@ -3,6 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/placeholder_polyfill.css')
     link(rel='stylesheet', href='/css/style.css')
 
     meta(name="viewport", content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
@@ -11,5 +12,6 @@ html
         block content
 
     script(src="/js/jquery-2.0.3.min.js")
-    script(src="/js/bootstrap.min.js")
-    script(src="/js/main.js")
+    script(src="/js/placeholder_polyfill.jquery.js", defer="defer")
+    script(src="/js/bootstrap.min.js", defer="defer")
+    script(src="/js/main.js", defer="defer")
