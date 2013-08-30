@@ -2,16 +2,7 @@
 	$(document).ready(function(){
 		var id = 0;
 
-		if($('.container').height() < $(window).height()){
-			$('.container').height($(window).height());
-		}
-		$('.height100').css('height', $('.container').height() + 'px');
-		$(window).resize(function() {
-			if($('.container').height() < $(window).height()){
-				$('.container').height($(window).height());
-			}
-		});
-
+		
 
 		$('.names input').bind('input', function(){
 			$(this).val(ucwords($(this).val()));
@@ -47,12 +38,12 @@
 					$('#name').html(val.name);
 					$('.state2').removeClass('hidden').hide().fadeIn();
 					$('[data-id="'+val.id+'"]').addClass('used');
-					$('.share .scope-note').html('Let <strong>'+val.name+'</strong> know they lost')
+					$('.share .scope-note').html('Tell <strong>'+val.name+'</strong> it\'s time to put the kettle on:')
 					$('.email').html('email them a reminder')
 							.attr('target', '_blank')
-							.attr('href', "mailto:?subject=Make the Tea!&body=Hey "+val.name+", You were picked to make the tea by Sage's VATea app! Get Brewing");
+							.attr('href', "mailto:?subject=Make the Tea!&body=Hey "+val.name+", it's time to put the kettle on!");
 
-					var tweet_text = 'Hey, ' + val.name + ' Make the tea!';
+					var tweet_text = 'Hey, ' + val.name + ' it\'s time to put the kettle on!';
 					var tweet_url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_text) + '&url=' + encodeURIComponent('http://www.sage.co.uk') + '&via=' + 'sageuk';
 					$('.twitter').attr('href', tweet_url);
 				});

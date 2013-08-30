@@ -1,4 +1,4 @@
-/********fonts*******/
+4d4f53/********fonts*******/
 @font-face {
   font-family: 'FocoRegular';
   src: url("http://www.sage.co.uk/fonts/foco/foco-webfont.eot");
@@ -34,32 +34,40 @@
 html, body{
 	
     min-height: 100%;
-	background-color: grey;
+	background-color: #4d4f53;
 	font-family: arial;
 	color: white;
 }
 
+input{
+	 line-height: normal !important;
+	 
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #efefef;
+    color:    #007f64;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #efefef;
+    color:    #007f64;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #efefef;
+    color:    #007f64;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #efefef;
+    color:    #007f64;
 }
 
 .container{
 	max-width: 720px !important;
-	background-color: white;
-	background-image: url('../images/cup.png');
+	background-color: #4d4f53;
 	background-position: bottom 30px right 95px;
 	background-repeat:no-repeat;
 }
 
+.sage-logo{
+	float: right;
+	margin: 20px
+}
 .height100{
     min-height: 100%;
 	position: relative;
@@ -69,13 +77,11 @@ html, body{
 	float:left;
 	width:270px;
 	margin-left:45px;
-	background-color: #41a940;
-	text-align: center;
+	text-align: left;
 }
 
 .logo{
-	width:180px;
-	height: 180px;
+	width:230px;
 	display: block;
 	margin: 32px auto;
 }
@@ -83,7 +89,7 @@ html, body{
 
 .col-custom-left p{
 	color: white;
-	font-size:19px;
+	font-size:16px;
 	padding-left:25px;
 	padding-right: 25px;
 	margin-bottom: 25px;
@@ -106,11 +112,12 @@ html, body{
 }
 
 input{
-	background-color: #007f64;
+	background-color: #fff;
 	margin-bottom: 2px;
-	color: white;
-	border:2px solid #C0D8BF;
-	line-height: 30px;
+	color: #007f64;
+	border:2px solid #007f64;
+	height: 2.5em;
+
 }
 
 button{
@@ -125,7 +132,6 @@ button{
 	float:right;
 	width:320px;
 	margin-right: 45px;
-	background-color: rgba(255, 255, 255, 0.5);
 	padding-bottom: 20px;
 }
 
@@ -189,11 +195,6 @@ button{
 	background-position: top center;
 }
 
-.cup{
-	margin:20px auto;
-	display: block;
-	width:220px;
-}
 
 .modal-content{
 	border-radius: 0px;
