@@ -15,7 +15,7 @@
 		$('.go').click(function(){
 			var vals = [];
 
-			$('.names input').each(function(){
+			$('.names .input-row input').each(function(){
 
 				var row = $(this).parents('.input-row');
 
