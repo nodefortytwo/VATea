@@ -1,0 +1,19 @@
+.names input{
+	width: 290px;
+}
+
+.input-row{
+	margin: 0 -10px;
+}
+
+.intro{
+	width: 268px;
+}
+
+.share{
+	width:268px;
+}
+
+.fade{
+	display: none;
+}

@@ -1,0 +1,256 @@
+4d4f53/********fonts*******/
+@font-face {
+  font-family: 'FocoRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/foco-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/foco-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/foco-webfont.svg#FocoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoBlackRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focoblack-webfont.svg#FocoBlackRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoBold';
+  src: url("http://www.sage.co.uk/fonts/foco/focobold-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focobold-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focobold-webfont.svg#FocoBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FocoLightRegular';
+  src: url("http://www.sage.co.uk/fonts/foco/focolight-webfont.eot");
+  src: url("http://www.sage.co.uk/fonts/foco/focolight-webfont.eot?#iefix") format("embedded-opentype"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.woff") format("woff"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.ttf") format("truetype"), url("http://www.sage.co.uk/fonts/foco/focolight-webfont.svg#FocoLightRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body{
+	
+    min-height: 100%;
+	background-color: #4d4f53;
+	font-family: arial;
+	color: white;
+}
+
+input{
+	 line-height:2em;	 
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #007f64;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #007f64;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #007f64;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #007f64;
+}
+
+.container{
+	max-width: 720px !important;
+	background-color: #4d4f53;
+	background-position: bottom 30px right 95px;
+	background-repeat:no-repeat;
+}
+
+.sage-logo{
+	float: right;
+	margin: 20px 0;
+	width:100px;
+	height: 40px;
+}
+.height100{
+    min-height: 100%;
+	position: relative;
+}
+
+.col-custom-left{
+	float:left;
+	width:270px;
+	margin-left:45px;
+	text-align: left;
+}
+
+.logo{
+	width:230px;
+	height:405px;
+	display: block;
+	margin: 32px auto;
+}
+
+
+.col-custom-left p{
+	color: white;
+	font-size:16px;
+	padding-left:25px;
+	padding-right: 25px;
+	margin-bottom: 25px;
+}
+
+.intro{
+	background-color: #41a940;
+	margin: 32px 0;
+	padding: 10px 26px;
+	text-align: center;
+	float: left;
+	width:100%;
+}
+
+.arrow{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: -22px;
+
+}
+
+input{
+	background-color: #fff;
+	margin-bottom: 2px;
+	color: #007f64;
+	border:2px solid #007f64;
+	height: 2.5em;
+	width: 100%;
+
+}
+
+button{
+	margin-top: 5px;
+}
+
+.used{
+	opacity: 0.8;
+}
+
+.col-custom-right{
+	float:right;
+	width:320px;
+	margin-right: 45px;
+	padding-bottom: 20px;
+}
+
+.state1, .state2{
+	clear: both;
+	width: 100%;
+}
+
+.names{
+	clear: both;
+	width: 100%;
+}
+
+.winner-badge{
+	width: 320px;
+	height:260px;
+	background-image: url(../images/winning-badge.png);
+	overflow: hidden;
+	background-repeat: no-repeat;
+	color:white;
+	clear:both;
+}
+
+.winner-badge .title{
+	width: 165px;
+	margin: 0 auto;
+	font-size: 19px;
+	margin-top: 45px;
+	display: block;
+	text-align: center;
+}
+
+.winner-badge #name{
+	line-height: 60px;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	width:280px;
+	margin:2px auto;
+	display: block;
+	overflow: hidden;
+	height: 60px;
+}
+
+.share{
+	background-color: #007f64;
+	margin: 32px 0 10px;
+	padding: 10px 26px;
+	text-align: center;
+	float: left;
+	width:100%;
+	clear: both;
+}
+
+.share span{
+	display: block;
+}
+
+.share a{
+	display: block;
+	width:50%;
+	float:left;
+	line-height: 45px;
+	background-image: url(../images/share-links.png);
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	text-indent: -10000px;
+	margin-top:10px;
+}
+
+.share a.email{
+	clear: both;
+	background-position: top center;
+}
+
+.replay{
+	width:100%;
+
+}
+
+.modal-content{
+	border-radius: 0px;
+	background-color: #41a940;
+}
+
+.btn{
+
+	color: #FFF;
+	border: 1px solid #FFF;
+	padding: 7px 0px;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-repeat: no-repeat;
+	background: none;
+	display: inline-block;
+	font-weight: normal;
+	background-color: #34B233;
+	background-image: linear-gradient(bottom, #34b233 0%, #66c566 100%);
+	background-image: -o-linear-gradient(bottom, #34b233 0%, #66c566 100%);
+	background-image: -moz-linear-gradient(bottom, #34b233 0%, #66c566 100%);
+	background-image: -webkit-linear-gradient(bottom, #34B233 0%, #66C566 100%);
+	background-image: -ms-linear-gradient(bottom, #34b233 0%, #66c566 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #34B233), color-stop(1, #66C566));
+	font-size: 1.2em;
+	font-family: 'FocoBold', Arial, Helvetica, sans-serif;
+	border-radius: 0px;
+	clear: both;
+
+}
+
+.go{
+	width: 100%;
+}
+
+.modal {
+	overflow: hidden;
+}
