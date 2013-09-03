@@ -39,6 +39,10 @@ html, body{
 	color: white;
 }
 
+body{
+	padding-top: 20px;
+}
+
 input{
 	 line-height:2em;	 
 }
@@ -120,11 +124,12 @@ input{
 	border:2px solid #007f64;
 	height: 2.5em;
 	width: 100%;
-
+	margin-top: 5px;
+	text-align: center;
 }
 
-button{
-	margin-top: 5px;
+button.go{
+	margin-top: 20px;
 }
 
 .used{
@@ -134,13 +139,25 @@ button{
 .col-custom-right{
 	float:right;
 	width:320px;
-	margin-right: 45px;
+	margin-right: 85px;
 	padding-bottom: 20px;
 }
 
 .state1, .state2{
 	clear: both;
 	width: 100%;
+}
+
+.state1{
+	width: 230px;
+	float: right;
+}
+
+.state2{
+	margin-right: -32px;
+	padding-top: 30px;
+	float: right;
+	width: 320px;
 }
 
 .names{
@@ -156,6 +173,7 @@ button{
 	background-repeat: no-repeat;
 	color:white;
 	clear:both;
+	margin-right: -32px;
 }
 
 .winner-badge .title{
@@ -210,9 +228,10 @@ button{
 	background-position: top center;
 }
 
-.replay{
-	width:100%;
-
+body .replay{
+	width:235px;
+	margin:0 auto;
+	display: block;
 }
 
 .modal-content{
