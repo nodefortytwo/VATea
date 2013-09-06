@@ -40,7 +40,7 @@
 					$('[data-id="'+val.id+'"]').addClass('used');
 					$('.share .scope-note').html('Tell <strong>'+val.name+'</strong> it\'s time to put the kettle on:');
 
-					var email_body = "Hey "+val.name+", it's time to put the kettle on!%0D%0AIt's time to stop stressing and put the TEA into VAT. Whether you're not sure what VAT is, when to register, or how to do your VAT return, visit http://sage.co.uk/vat for all of the information and advice you’ll need to get started.";
+					var email_body = "Hey "+val.name+", it's time to put the kettle on!%0D%0A%0D%0AIt's time to stop stressing and put the TEA into VAT. Whether you're not sure what VAT is, when to register, or how to do your VAT return, visit http://sage.co.uk/vat for all of the information and advice you’ll need to get started.";
 
 					$('.email').html('email them a reminder')
 							.attr('target', '_blank')
