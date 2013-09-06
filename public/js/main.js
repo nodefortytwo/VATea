@@ -38,10 +38,13 @@
 					$('#name').html(val.name);
 					$('.state2').removeClass('hidden').hide().fadeIn();
 					$('[data-id="'+val.id+'"]').addClass('used');
-					$('.share .scope-note').html('Tell <strong>'+val.name+'</strong> it\'s time to put the kettle on:')
+					$('.share .scope-note').html('Tell <strong>'+val.name+'</strong> it\'s time to put the kettle on:');
+
+					var email_body = "Hey "+val.name+", it's time to put the kettle on!%0D%0AIt's time to stop stressing and put the TEA into VAT. Whether you're not sure what VAT is, when to register, or how to do your VAT return, visit http://sage.co.uk/vat for all of the information and advice you’ll need to get started.";
+
 					$('.email').html('email them a reminder')
 							.attr('target', '_blank')
-							.attr('href', "mailto:?subject=Make the Tea!&body=Hey "+val.name+", it's time to put the kettle on!");
+							.attr('href', "mailto:?subject=Make the Tea!&body="+email_body);
 
 					var tweet_text = 'Hey, ' + val.name + ' it\'s time to put the kettle on!';
 					var tweet_url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_text) + '&url=' + encodeURIComponent('http://www.sage.co.uk') + '&via=' + 'sageuk';
@@ -94,3 +97,15 @@ function ucwords (str) {
     return $1.toUpperCase();
   });
 }
+
+window.fbAsyncInit = function() 
+{
+    FB.init({ appId: '461203613987593', 
+    status: false, 
+    cookie: false,
+    xfbml: false,
+    oauth: false});
+
+    FB.Canvas.setAutoGrow();
+}
+

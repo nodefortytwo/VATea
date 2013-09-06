@@ -20,9 +20,11 @@ html
     <![endif]-->
     meta(name="viewport", content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
   body
+    div#fb-root
     div.container.height100
         block content
 
+    script(src="//connect.facebook.net/en_US/all.js")
     script(src="//code.jquery.com/jquery-1.10.2.min.js")
     script(src="./js/placeholder.js", defer)
     script(src="./js/bootstrap.min.js", defer)
