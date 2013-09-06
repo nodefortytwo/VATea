@@ -79,7 +79,9 @@
 			$('state2').hide();
 		}
 
-	console.log(getParameterByName('facebook'));
+	if(getParameterByName('facebook') == 'true'){
+		$('.facebook').show();
+	}
 
 })(jQuery);
 
@@ -118,7 +120,5 @@ window.fbAsyncInit = function()
     oauth: false});
 
     FB.Canvas.setAutoGrow();
-
-    jQuery('.facebook').show();
 }
 
