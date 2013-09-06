@@ -79,7 +79,7 @@
 			$('state2').hide();
 		}
 
-	console.log(top.location.hostname);
+	console.log(parent.location.hostname);
 
 })(jQuery);
 
