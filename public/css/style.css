@@ -60,6 +60,10 @@ input{
     color:    #007f64;
 }
 
+.facebook{
+	display: none;
+}
+
 .container{
 	max-width: 720px !important;
 	background-color: #4d4f53;

@@ -107,5 +107,7 @@ window.fbAsyncInit = function()
     oauth: false});
 
     FB.Canvas.setAutoGrow();
+
+    jQuery('.facebook').show();
 }
 
