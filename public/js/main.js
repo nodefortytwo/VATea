@@ -79,7 +79,7 @@
 			$('state2').hide();
 		}
 
-	console.log(parent.location.hostname);
+	console.log(getParameterByName('facebook'));
 
 })(jQuery);
 
@@ -98,6 +98,14 @@ function ucwords (str) {
   return (str + '').replace(/^([a-z\u00E0-\u00FC])|\s+([a-z\u00E0-\u00FC])/g, function ($1) {
     return $1.toUpperCase();
   });
+}
+
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
 window.fbAsyncInit = function() 
