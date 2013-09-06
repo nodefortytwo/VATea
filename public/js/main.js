@@ -79,6 +79,8 @@
 			$('state2').hide();
 		}
 
+	console.log(location.hostname);
+
 })(jQuery);
 
 function ucwords (str) {
