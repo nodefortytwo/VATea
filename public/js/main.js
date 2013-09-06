@@ -100,7 +100,8 @@ function ucwords (str) {
 
 window.fbAsyncInit = function() 
 {
-    FB.init({ appId: '461203613987593', 
+    FB.init({ appId: '461203613987593',
+    channelUrl : '//thawing-castle-5654.herokuapp.com//channel.html' 
     status: false, 
     cookie: false,
     xfbml: false,
