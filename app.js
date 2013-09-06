@@ -27,6 +27,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.post('/', routes.index);
 app.get('/', routes.index);
 
 var server = http.createServer(app);
