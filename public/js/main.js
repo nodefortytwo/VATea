@@ -47,7 +47,7 @@
 							.attr('href', "mailto:?subject=Make the Tea!&body="+email_body);
 
 					var tweet_text = 'Hey, ' + val.name + ' it\'s time to put the kettle on!';
-					var tweet_url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_text) + '&url=' + encodeURIComponent('http://www.sage.co.uk') + '&via=' + 'sageuk';
+					var tweet_url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(tweet_text) + '&url=' + encodeURIComponent('http://www.sage.co.uk/vat-advice/put-the-tea-into-vat') + '&via=' + 'sageuk';
 					$('.twitter').attr('href', tweet_url);
 				});
 			}
