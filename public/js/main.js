@@ -79,10 +79,11 @@
 			$('state2').hide();
 		}
 
-	if(!top.location){
+	//check if this is on the same domain
+	if(!top.location.host){
 		$('.facebook').show();
 	}
-	
+
 })(jQuery);
 
 function ucwords (str) {
