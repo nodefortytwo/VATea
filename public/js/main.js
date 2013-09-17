@@ -79,10 +79,10 @@
 			$('state2').hide();
 		}
 
-	if(getParameterByName('facebook') == 'true'){
+	if(!top.location){
 		$('.facebook').show();
 	}
-
+	
 })(jQuery);
 
 function ucwords (str) {
