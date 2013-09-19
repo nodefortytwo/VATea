@@ -80,7 +80,8 @@
 		}
 
 	//check if this is on the same domain
-	if(!top.location.host){
+	console.log(top.location.host);
+	if(top.location.host !== 'www.sage.co.uk'){
 		$('.facebook').show();
 	}
 
